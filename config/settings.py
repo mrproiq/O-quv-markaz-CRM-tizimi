@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from datetime import timedelta
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -164,3 +165,5 @@ DJOSER = {
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {},
 }
+
+AUTH_USER_MODEL = 'main.User'
